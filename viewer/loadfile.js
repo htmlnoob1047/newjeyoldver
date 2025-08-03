@@ -84,3 +84,39 @@ window.addEventListener('scroll', () => {
     floatingNav.classList.toggle('hidden', scrolledToBottom);
   }
 });
+
+let floatingNavTimeout;
+
+function showFloatingNavTemporarily() {
+  const floatingNav = document.querySelector('.fixed-nav-buttons');
+  if (!floatingNav) return;
+
+  floatingNav.classList.remove('hidden');
+
+  // 기존 타이머 제거
+  if (floatingNavTimeout) clearTimeout(floatingNavTimeout);
+
+  // 일정 시간 후 다시 숨김
+  floatingNavTimeout = setTimeout(() => {
+    floatingNav.classList.add('hidden');
+  }, 3000); // 3초 후 숨김
+}
+
+// 스크롤 시 숨기기
+window.addEventListener('scroll', () => {
+  const floatingNav = document.querySelector('.fixed-nav-buttons');
+  const scrolledToBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 10;
+
+  if (floatingNav) {
+    floatingNav.classList.toggle('hidden', scrolledToBottom);
+  }
+
+  // 스크롤 시 즉시 숨김
+  if (floatingNav && !floatingNav.classList.contains('hidden')) {
+    floatingNav.classList.add('hidden');
+  }
+});
+
+// 터치(또는 클릭) 시 다시 보이기
+window.addEventListener('touchstart', showFloatingNavTemporarily);
+window.addEventListener('click', showFloatingNavTemporarily); // PC 마우스 클릭 대응

@@ -156,7 +156,7 @@
     history.replaceState(null, '', url);
   }
 
-  // 버튼 이벤트
+  // 버튼 이벤트 연결
   if (prevBtn) prevBtn.addEventListener('click', () => changeChapter(-1));
   if (nextBtn) nextBtn.addEventListener('click', () => changeChapter(1));
   if (floatingPrev) floatingPrev.addEventListener('click', () => changeChapter(-1));
@@ -174,4 +174,40 @@
     showSingleChapter(chapter);
     updateButtons(chapter);
   }
+
+  let navButtonsTimeout;
+  let lastScrollTime = 0;
+
+  function hideFixedButtons() {
+    if (fixedNavButtons) {
+      fixedNavButtons.classList.add('hidden');
+    }
+  }
+
+  function showFixedButtons() {
+    if (fixedNavButtons) {
+      fixedNavButtons.classList.remove('hidden');
+    }
+    clearTimeout(navButtonsTimeout);
+    navButtonsTimeout = setTimeout(hideFixedButtons, 2000);
+  }
+
+  // 스크롤 시 버튼 숨기기만
+  window.addEventListener('scroll', () => {
+    lastScrollTime = Date.now();
+    hideFixedButtons();
+  });
+
+  // 터치 또는 클릭 시 버튼 표시
+  ['touchstart', 'mousedown'].forEach(evt =>
+    window.addEventListener(evt, () => {
+      if (Date.now() - lastScrollTime > 200) {
+        showFixedButtons();
+      }
+    })
+  );
+
+  // 페이지 로드시 버튼 표시 후 자동 숨김
+  showFixedButtons();
+
 })();
