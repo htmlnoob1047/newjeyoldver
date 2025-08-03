@@ -10,7 +10,7 @@ const webtoonTooltips = {
         "tlqdlwlthsu": " 십이지소녀 | MAJOR / 지지 ",
         "dlsrkstjstodsla": " 인간 선생님 | 기령 ",
         "ghlrnlwktkdydtjfaudtj": " 회귀자 사용 설명서 | 도미 / Midnoght Studio / 흙수저 ",
-        "vlraldjq": " 픽 미 업! | 조우네 / 와삭바삭 ",
+        "vlraldjq!": " 픽 미 업! | 조우네 / 와삭바삭 ",
         // 2
         "ehddkfl": " 동아리 | 슈리넬 / QRQ ",
         "slduclsWjfejfk": " 니 여친 쩔더라 | 냉무19 / 빠니 ",
@@ -21,6 +21,7 @@ const webtoonTooltips = {
         "ejswjsthrtkwjd": " 던전 속 사정 | 레바 ",
         "whzktpdytkachs": " 조카세요 삼촌 | 수화 / G유 ",
         "rmrjrmfjgrpgksmsrjdkslsep": " 그거 그렇게 하는거 아닌데 | 양총 / 돌연사빅파이 ",
+        "skawkrkdjqtsmsdltprP": " 남자가 없는 이세계 | 희민 ",
       };
 
       document.querySelectorAll('.general-webtoon-content').forEach(el => {
