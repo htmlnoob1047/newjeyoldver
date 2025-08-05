@@ -14,11 +14,20 @@
   <meta http-equiv="Pragma" content="no-cache">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="moblie.css">
+  <link rel="icon" type="images/png" href="title-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- 팝업
+  <div class="popup" id="popup">
+      <div class="popup-content">
+          <h2>뉴재이닷컴</h2>
+          <p>이 사이트는 영리적인 목적으로 개설된 사이트가 아닙니다.</p>
+          <button class="close-btn" id="closePopup">닫기</button>
+      </div>
+  </div> -->
   <!-- width 1200px 이상일 경우 여백으로 표현 (.background) -->
   <div class="background">
     <div class="content">
@@ -44,7 +53,7 @@
             <div class="quick-menu-content">
               <span>웹툰</span>
               <ul class="webtoon">
-                <li>일반 웹툰</li>
+                <li onclick="window.location.href = 'more-btn/general-webtoon/index.html'">일반 웹툰</li>
                 <li>성인 웹툰</li>
                 <li>일본 만화</li>
                 <li>웹소설</li>
@@ -187,7 +196,7 @@
                   <span class="general-webtoon-writer">MAJOR / 지지</span>
                 </div>
               </div>
-              <div class="general-webtoon-content" data-general-webtoon-id="dlsrkstjstodsla" data-webtoon-tag="개그, 판타지, 학원">
+              <div class="general-webtoon-content" data-general-webtoon-id="dlsrkstjstodsla" data-webtoon-tag="개그, 판타지, 학원" data-the-number-of-chapter="4">
                 <div class="webtoon-info">
                   <img src="webtoon-cover/인간_선생님.png" class="webtoon-cover">
                   <span class="general-webtoon-name">인간 선생님</span>
@@ -462,6 +471,17 @@
       }
     }
   });
+  </script>
+  <!-- 팝업 -->
+  <script type="text/javascript">
+    // 팝업과 닫기 버튼 참조
+    const popup = document.getElementById('popup');
+    const closePopupButton = document.getElementById('closePopup');
+
+    // 팝업 닫기 버튼 클릭 시
+    closePopupButton.addEventListener('click', function() {
+    popup.style.display = 'none'; // 팝업 숨기기
+    });
   </script>
 </body>
 </html>
