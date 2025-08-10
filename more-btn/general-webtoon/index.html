@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>일반웹툰</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="icon" type="images/png" href="../../title-logo.png">
 </head>
 <body>
@@ -132,5 +133,25 @@
         </div>
       </div>
     </div>
+  </div>
+  <!-- span > .webtoon-title 두 줄 이상시 eclipse 처리 -->
+  <script type="text/javascript">
+  document.querySelectorAll('.webtoon-title').forEach(span => {
+    const lineHeight = 1; // em 기준
+    const maxLines = 2;
+
+    const computedStyle = getComputedStyle(span);
+    const lineHeightPx = parseFloat(computedStyle.lineHeight);
+    const clientHeight = span.scrollHeight;
+
+    const numLines = Math.round(clientHeight / lineHeightPx);
+  
+    if (numLines > maxLines) {
+      span.style.maxHeight = `${lineHeightPx * maxLines}px`;
+      span.style.display = '-webkit-box';
+      span.style.webkitLineClamp = maxLines;
+    }
+  });
+  </script>
 </body>
 </html>
