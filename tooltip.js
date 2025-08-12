@@ -22,6 +22,17 @@ const webtoonTooltips = {
         "whzktpdytkachs": " 조카세요 삼촌 | 수화 / G유 ",
         "rmrjrmfjgrpgksmsrjdkslsep": " 그거 그렇게 하는거 아닌데 | 양총 / 돌연사빅파이 ",
         "skawkrkdjqtsmsdltprP": " 남자가 없는 이세계 | 희민 ",
+        // 3
+        "cjswoaksudmlakfurrhrkf": " 천재마녀의 마력고갈 | 츠지시마 모토 ",
+        "slduclsWjfejfk": " 니 여친 쩔더라 | 냉무19 / 빠니 ",
+        "ekaqovlwlaktpdy!": " 담배피지 마세요! | 싸능 / 모모세 ",
+        "wndnjTekTmfprlwkddptjwlfhlrPthsufmf": " 주웠다, 쓰레기장에서 지뢰계 소녀를 | 퐁당이 / 란몽 ",
+        "skawkrkgmlrnlgka": " 남자가 희귀함 | 말포이 ",
+        "gksurodtod": " 하녀갱생 | 은싸 / 우엉 ",
+        "ejswjsthrtkwjd": " 던전 속 사정 | 레바 ",
+        "whzktpdytkachs": " 조카세요 삼촌 | 수화 / G유 ",
+        "rmrjrmfjgrpgksmsrjdkslsep": " 그거 그렇게 하는거 아닌데 | 양총 / 돌연사빅파이 ",
+        "skawkrkdjqtsmsdltprP": " 남자가 없는 이세계 | 희민 ",
       };
 
       document.querySelectorAll('.general-webtoon-content').forEach(el => {

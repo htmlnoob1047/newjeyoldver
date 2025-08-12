@@ -119,7 +119,7 @@
       }
       contentElement.classList.remove('loading');
       contentElement.textContent = text;
-    } else {
+    } /* else {
       const images = await loadWebtoonChapterImages(ch);
       if (images.length === 0) {
         contentElement.classList.remove('loading');
@@ -134,7 +134,7 @@
         contentElement.appendChild(img);
       });
       contentElement.classList.remove('loading');
-    }
+    } */
   }
 
   function changeChapter(diff) {
