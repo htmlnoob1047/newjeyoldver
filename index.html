@@ -20,14 +20,69 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- 팝업
+  <!--
   <div class="popup" id="popup">
-      <div class="popup-content">
-          <h2>뉴재이닷컴</h2>
-          <p>이 사이트는 영리적인 목적으로 개설된 사이트가 아닙니다.</p>
-          <button class="close-btn" id="closePopup">닫기</button>
+    <div class="popup-content">
+      <span style="font-size: 20px; font-weight: bold; padding-bottom: 10px;">다음은 추가 될 웹툰 목록입니다.</span>
+        <div class="add-webtoon-list-wrapper" style="padding-top: 20px;">
+          <span class="add-webtoon-list">매도당하고 싶은 엘프</span><br>
+          <span class="add-webtoon-list">일진녀 과외하기</span><br>
+          <span class="add-webtoon-list">암컷 길들여 신분상승</span><br>
+          <span class="add-webtoon-list">월세방 신부들</span><br>
+          <span class="add-webtoon-list">일상생활 가능하세요?</span><br>
+          <span class="add-webtoon-list">아카데미 야겜에 빙의했다</span><br>
+          <span class="add-webtoon-list">너 그런거 보니?</span><br>
+          <span class="add-webtoon-list">팝니다. 몰락영애. 한 번도 안 쓴</span><br>
+          <span class="add-webtoon-list">퇴근 후 연애사정</span><br>
+          <span class="add-webtoon-list">대학생활은 동아리부터</span><br>
+          <span class="add-webtoon-list">주인공이 빌런임</span><br>
+          <span class="add-webtoon-list">모르는 여자랑 하라고요?</span><br>
+          <span class="add-webtoon-list">오늘부터 최애</span><br>
+          <span class="add-webtoon-list">이웃집 가챠걸</span><br>
+          <span class="add-webtoon-list">이 좋소는 이제 제껍니다</span><br>
+          <span class="add-webtoon-list">세계수를 따먹다</span><br>
+          <span class="add-webtoon-list">호감작하는 인방매니저</span><br>
+          <span class="add-webtoon-list">가족끼리 왜 그래</span><br>
+          <span class="add-webtoon-list">정을 훔친 여우</span><br>
+          <span class="add-webtoon-list">성적떡상</span><br>
+          <span class="add-webtoon-list">박아서 살아남기</span><br>
+          <span class="add-webtoon-list">세트업</span><br>
+          <span class="add-webtoon-list">내 맘대로 이세계 최면</span><br>
+          <span class="add-webtoon-list">절정 스위치</span><br>
+          <span class="add-webtoon-list">러브러브 원더랜드</span><br>
+          <span class="add-webtoon-list">모비딕</span><br>
+          <span class="add-webtoon-list">내가 여사친들과 친해지는 방법</span><br>
+          <span class="add-webtoon-list">회귀 병사의 암컷 정복 일지</span><br>
+          <span class="add-webtoon-list">학교에선 비밀이니까</span><br>
+          <span class="add-webtoon-list">귀신과 하는 남자</span><br>
+          <span class="add-webtoon-list">찐한 남매</span><br>
+          <span class="add-webtoon-list">성인웹툰 속 엑스트라가 되었다</span><br>
+          <span class="add-webtoon-list">사실은 너무 좋아!</span><br>
+          <span class="add-webtoon-list">그거 그렇게 하는거 아닌데</span><br>
+          <span class="add-webtoon-list">진짜 딸이 돌아왔다</span><br>
+          <span class="add-webtoon-list">치트타자가 다 따먹음</span><br>
+          <span class="add-webtoon-list">이게 왜 실화?</span><br>
+          <span class="add-webtoon-list">딸이 너랑 동갑인데</span><br>
+          <span class="add-webtoon-list">그녀가 하렘을 추천한다</span><br>
+          <span class="add-webtoon-list">부부게임</span><br>
+          <span class="add-webtoon-list">쥐어짜는 체육관</span><br>
+          <span class="add-webtoon-list">취화점</span><br>
+          <span class="add-webtoon-list">도련님 대신 먹어드립니다</span><br>
+          <span class="add-webtoon-list">여교사 윤지</span><br>
+          <span class="add-webtoon-list">pc방 그녀</span><br>
+          <span class="add-webtoon-list">두 번은 안 당해</span><br>
+          <span class="add-webtoon-list">이세계 밀프 헌터</span><br>
+          <span class="add-webtoon-list">여동생이랑 비밀레슨</span><br>
+          <span class="add-webtoon-list">선생님의 노력</span><br>
+          <span class="add-webtoon-list">안 보이는 투명츄</span><br>
+        </div>
+      <div class="hojin">
+        <label><input type="checkbox" id="dontShowToday"> 오늘 하루 보지 않기</label>
+        <br>
+        <button class="close-btn" id="closePopup">닫기</button>
       </div>
-  </div> -->
+    </div>
+  </div>-->
   <!-- width 1200px 이상일 경우 여백으로 표현 (.background) -->
   <div class="background">
     <div class="content">
@@ -39,6 +94,7 @@
             <!-- 햄버거 버튼 (모바일) -->
             <div class="hamburger" onclick="toggleMobileMenu()">☰</div>
               <img class="logo" src="logo.png">
+              <button class="signup-btn" style="margin-top: 17.5px; margin-left: 20px; padding: 10px 10px; border-radius: 10px; border: 1px black solid;">회원가입</button>
             </div>
           </div>
         </div>
@@ -50,19 +106,25 @@
           <div class="quick-menu">
             <br>
             <span>빠른 이동</span>
+            <!-- <div class="quick-menu-content">
+              <span>도박사이트</span>
+              <ul class="webtoon">
+                <li onclick="window.location.href = 'jackpot/index.html'">재이카지노</li>
+              </ul>
+            </div> -->
             <div class="quick-menu-content">
               <span>웹툰</span>
               <ul class="webtoon">
                 <li onclick="window.location.href = 'more-btn/general-webtoon/index.html'">일반 웹툰</li>
-                <li>성인 웹툰</li>
+                <li onclick="window.location.href = 'more-btn/adult-webtoon/index.html'">성인 웹툰</li>
                 <li onclick="window.location.href = 'more-btn/manga/index.html'">일본 만화</li>
-                <li>웹소설</li>
+                <li onclick="window.location.href = 'more-btn/novel/index.html'">웹소설</li>
               </ul>
             </div>
             <div class="quick-menu-content">
               <span>애니메이션</span>
               <ul class="webtoon">
-                <li style="color: gray;" onclick="alert('준비중입니다')">준비중입니다</li>
+                <li onclick="window.location.href = 'animation/index.html'">준비중입니다</li>
                 <!--
                 <li onclick="location.href = 'https://linkkf.com'">linnkf로</li>
                 <li>만들기 귀찮음</li>-->
@@ -221,7 +283,7 @@
             <br><br>
             <div class="webtoon-content-upper-menu">
               <span class="main-content-info">성인 웹툰</span>
-              <button class="more-btn" data-move-btn-id="adult-webtoon">더보기</button>
+              <button class="more-btn" data-move-btn-id="adult-webtoon" onclick="window.location.href = 'more-btn/adult-webtoon/index.html'">더보기</button>
             </div>
             <!-- 성인 웹툰 -->
             <div class="general-webtoon content-wrapper" id="adult-webtoon">
@@ -271,10 +333,10 @@
                 <div class="webtoon-info">
                   <img src="webtoon-cover/던전_속_사정.webp" class="webtoon-cover">
                   <span class="general-webtoon-name">던전 속 사정</span>
-                  <span class="general-webtoon-writer">레바</span>
+                  <span class="general-webtoon-writer">레바</span>  
                 </div>
               </div>
-              <div class="general-webtoon-content" data-general-webtoon-id="whzktpdytkachs" data-the-number-of-chapter="1">
+              <div class="general-webtoon-content" data-general-webtoon-id="whzktpdytkachs" data-the-number-of-chapter="1" data-webtoon-tag="   ">
                 <div class="webtoon-info">
                   <img src="webtoon-cover/조카세요_삼촌.png" class="webtoon-cover">
                   <span class="general-webtoon-name">조카세요 삼촌</span>
@@ -299,7 +361,7 @@
             <br><br>
             <div class="webtoon-content-upper-menu">
               <span class="main-content-info">일본 만화</span>
-              <button class="more-btn" data-move-btn-id="manga">더보기</button>
+              <button class="more-btn" data-move-btn-id="manga" onclick="window.location.href = 'more-btn/manga/index.html'">더보기</button>
             </div>
             <!-- 일본 만화 -->
             <div class="general-webtoon content-wrapper-manga" id="manga">
@@ -367,42 +429,49 @@
             </div>
             <!-- 웹소설 -->
             <div class="general-webtoon content-wrapper-manga" id="novel">
-              <div class="general-webtoon-content" data-general-webtoon-id="ghktksrnlghks">
+              <div class="general-webtoon-content" data-general-webtoon-id="ghktksrnlghks" data-webtoon-tag="네이버시리즈">
                 <div class="webtoon-info">
                   <img src="novel-cover/화산귀환.jpg" class="novel-cover">
                   <span class="general-webtoon-name">화산귀환</span>
                   <span class="general-webtoon-writer">비가</span>
                 </div>
               </div>
-              <div class="general-webtoon-content" data-general-webtoon-id="aksktkfehsdjqtdjtjdlsqkdgka" data-the-number-of-chapter="67">
+              <div class="general-webtoon-content" data-general-webtoon-id="skQorhekrnlghkswk" data-the-number-of-chapter="100" data-webtoon-tag="네이버시리즈">
+                <div class="webtoon-info">
+                  <img src="novel-cover/나_빼고_다_귀환자.jpeg" class="novel-cover">
+                  <span class="general-webtoon-name">나 빼고 다 귀환자</span>
+                  <span class="general-webtoon-writer">토이카</span>
+                </div>
+              </div>
+              <div class="general-webtoon-content" data-general-webtoon-id="aksktkfehsdjqtdjtjdlsqkdgka" data-the-number-of-chapter="67" data-webtoon-tag="노벨피아">
                 <div class="webtoon-info">
                   <img src="novel-cover/마나_살_돈_없어서_인방함.png" class="novel-cover">
                   <span class="general-webtoon-name">마나 살 돈 없어서 인방함</span>
                   <span class="general-webtoon-writer">시엘클레</span>
                 </div>
               </div>
-              <div class="general-webtoon-content" data-general-webtoon-id="chlrkdrlfemdpskqclekdgoTek">
+              <div class="general-webtoon-content" data-general-webtoon-id="chlrkdrlfemdpskqclekdgoTek" data-webtoon-tag="노벨피아">
                 <div class="webtoon-info">
                   <img src="novel-cover/최강_길드에_납치당했다.png" class="novel-cover">
                   <span class="general-webtoon-name">최강 길드에 납치당했다</span>
                   <span class="general-webtoon-writer">먼데용</span>
                 </div>
               </div>
-              <div class="general-webtoon-content" data-general-webtoon-id="goqkdtlzlsshdPemfdlwlqckrgksek" data-the-number-of-chapter="41">
+              <div class="general-webtoon-content" data-general-webtoon-id="goqkdtlzlsshdPemfdlwlqckrgksek" data-the-number-of-chapter="41" data-webtoon-tag="노벨피아">
                 <div class="webtoon-info">
                   <img src="novel-cover/해방시킨_노예들이_집착한다.png" class="novel-cover">
                   <span class="general-webtoon-name">해방시킨 노예들이 집착한다</span>
                   <span class="general-webtoon-writer">물길따라</span>
                 </div>
               </div>
-              <div class="general-webtoon-content" data-general-webtoon-id="10susqkdclehlsrkcirpdladpemfdjdhkTek" data-the-number-of-chapter="1" onclick="alert('본 소설은 현재 1-199회차를 한 번에 제공합니다. 많은 데이터 사용량에 유의하세요.')">
+              <div class="general-webtoon-content" data-general-webtoon-id="10susqkdclehlsrkcirpdladpemfdjdhkTek" data-the-number-of-chapter="1" onclick="alert('본 소설은 현재 1-199회차를 한 번에 제공합니다. 많은 데이터 사용량에 유의하세요.')" data-webtoon-tag="카카오페이지">
                 <div class="webtoon-info">
                   <img src="novel-cover/10년_방치된_가챠게임에_들어왔다.webp" class="novel-cover">
                   <span class="general-webtoon-name">10년 방치된 가챠게임에 들어왔다</span>
                   <span class="general-webtoon-writer">봄한방울</span>
                 </div>
               </div>
-              <div class="general-webtoon-content" data-general-webtoon-id="wjfeoghlrnl">
+              <div class="general-webtoon-content" data-general-webtoon-id="wjfeoghlrnl" data-webtoon-tag="네이버시리즈">
                 <div class="webtoon-info">
                   <img src="novel-cover/절대회귀.jpg" class="novel-cover">
                   <span class="general-webtoon-name">절대회귀</span>
@@ -474,13 +543,43 @@
   </script>
   <!-- 팝업 -->
   <script type="text/javascript">
-    // 팝업과 닫기 버튼 참조
+    // 쿠키 설정
+    function setCookie(name, value, hours) {
+      const date = new Date();
+      date.setTime(date.getTime() + (hours * 60 * 60 * 1000));
+      document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
+    }
+
+    function getCookie(name) {
+      const cookies = document.cookie.split('; ');
+      for (let c of cookies) {
+        const [key, val] = c.split('=');
+        if (key === name) return val;
+      }
+      return null;
+    }
+
+    // 팝업 플로팅
     const popup = document.getElementById('popup');
     const closePopupButton = document.getElementById('closePopup');
+    const dontShowToday = document.getElementById('dontShowToday');
 
-    // 팝업 닫기 버튼 클릭 시
+    // 쿠키 확인
+    window.onload = function() {
+      if (getCookie("hidePopup") === "true") {
+        popup.style.display = "none";
+      } else {
+        popup.style.display = "block";
+      }
+    };
+
+    // 닫기 버튼 클릭 시
     closePopupButton.addEventListener('click', function() {
-    popup.style.display = 'none'; // 팝업 숨기기
+      if (dontShowToday.checked) {
+        // 체크박스 선택 (24시간동안 뜨지 않게)
+        setCookie("hidePopup", "true", 24);
+      }
+      popup.style.display = 'none'; // 팝업 숨기기
     });
   </script>
 </body>

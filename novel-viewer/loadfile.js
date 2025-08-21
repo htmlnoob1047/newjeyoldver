@@ -9,6 +9,7 @@
   const all = params.get('all') === 'true';
 
   const titleElement = document.getElementById('viewer-title');
+  const titleElement2 = document.getElementById('bottom-title');
   const contentElement = document.getElementById('viewer-content');
   const prevBtn = document.getElementById('prev-btn');
   const nextBtn = document.getElementById('next-btn');
@@ -32,7 +33,9 @@
   function updateTitle(ch) {
     const displayChapter = ch || chapter;
     document.title = `${title} | ${displayChapter}화`;
+    // titleElement: 상단, titleelement2: 하단
     if (titleElement) titleElement.textContent = `${title} - ${displayChapter}화`;
+    if (titleElement2) titleElement2.textContent = `${title} - ${displayChapter}화`;
   }
 
   function updateButtons(ch) {
